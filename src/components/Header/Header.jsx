@@ -1,4 +1,3 @@
-import Nukenzie from "../../assets/LogoBlack.svg";
 import GrayButton from "../GrayButton/GrayButton";
 import { HeaderStyled } from "./styles";
 
