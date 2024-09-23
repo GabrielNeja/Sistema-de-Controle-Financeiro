@@ -1,7 +1,5 @@
 import { createGlobalStyle } from "styled-components";
 
-// padrão - cor fonte: grey 4 / font weigth dos h: 400 / font-size: 16 px ou 1 rem
-
 export default createGlobalStyle`
 :root {
     --color-background: #FFFFFF;
