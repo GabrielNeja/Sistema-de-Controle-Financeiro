@@ -6,13 +6,18 @@ import Dashboard from "./components/Dashboard/Dashboard";
 
 function App() {
   const [isLogged, setIsLogged] = useState(false);
+  const [transactions, setTransactions] = useState([]); 
 
   return (
     <div>
       <Global />
 
       {isLogged ? (
-        <Dashboard setIsLogged={setIsLogged} />
+        <Dashboard
+          setIsLogged={setIsLogged}
+          transactions={transactions} 
+          setTransactions={setTransactions} 
+        />
       ) : (
         <HomePage setIsLogged={setIsLogged} />
       )}

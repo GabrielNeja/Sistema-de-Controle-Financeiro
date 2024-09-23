@@ -5,9 +5,7 @@ import List from "../List/List";
 import TotalMoney from "../TotalMoney/TotalMoney";
 import { DashboardStyled } from "./styles";
 
-function Dashboard({ setIsLogged }) {
-  const [transactions, setTransactions] = useState([]);
-
+function Dashboard({ setIsLogged, transactions, setTransactions }) {
   return (
     <div>
       <Header setIsLogged={setIsLogged} />
@@ -18,7 +16,7 @@ function Dashboard({ setIsLogged }) {
           <TotalMoney transactions={transactions} />
         </div>
 
-        <List setTransactions={setTransactions} transactions={transactions} />
+        <List transactions={transactions} setTransactions={setTransactions} />
       </DashboardStyled>
     </div>
   );
